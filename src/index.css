@@ -1,0 +1,113 @@
+:root {
+    --color-principal: #00ACE6;
+    --color-secundario: #196a86;
+    --color-principal-alternativo: #43a9cb;
+    --color-principla-ligero: #31c5f6;
+    --text-color: #6a777c;
+    --color-titulo: #232829;
+    --input-color: #eef8fc;
+    --body-color: #fbfdfe;
+}
+body {font-family: 'Poppins', sans-serif; background-color: var(--body-color);}
+*, *::after, *::before { margin: 0; padding: 0}
+/* a {text-decoration: none; cursor: pointer; color: var(--color-titulo)}
+li {list-style: none;}
+.header { width: 100%; position: fixed; bottom: 0; left: 0;box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5); border-top-left-radius: 18px; height: 3.5rem;border-top-right-radius: 18px;}
+.container { margin-right: 1.5rem; margin-left: 1.5rem;}
+.grid { display:  grid; gap: 1.5rem}
+
+/*Navegacion*/
+/* .nav {display: flex; justify-content: space-between; align-items: center;margin-top: 1rem; margin-bottom: 1rem;}
+
+.uil-apps { font-size: 20px; cursor: pointer;}
+.nav-menu { position: fixed; bottom: -100%; left: 0; width: 100%; padding: 2rem 1.5rem 4rem; padding-right: 1.5rem; box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5); border-radius: 1.5rem 1.5rem 0 0; background-color: var(--body-color);transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;}
+.nav-list { grid-template-columns:  repeat(3, 1fr); gap: 2rem;}
+.nav-menu.animar {transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in; position: rel}
+.show {bottom: 0}
+.nav-link { display: flex; flex-direction: column; align-items: center;} */ 
+#App {
+    font-family: sans-serif;
+  
+    /* Give app full page to work with */
+    height: 100vh;
+  }
+  
+  #page-wrap {
+    text-align: center;
+  
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
